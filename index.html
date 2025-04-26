@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aqui Lidero Eu</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col items-center justify-center">
+
+  <!-- Tela de Login -->
+  <section id="login-section" class="w-full max-w-sm p-8 bg-gray-800 rounded-lg shadow-lg">
+    <h1 class="text-2xl font-bold mb-6 text-center text-emerald-400">Aqui Lidero Eu</h1>
+    <form id="login-form" class="flex flex-col gap-4">
+      <input type="password" id="password" placeholder="Digite sua senha" class="p-3 rounded bg-gray-700 text-gray-100 focus:outline-none focus:ring-2 focus:ring-emerald-400">
+      <button type="submit" class="bg-emerald-500 hover:bg-emerald-600 text-white p-3 rounded font-bold transition">Entrar</button>
+    </form>
+    <div id="login-message" class="text-sm text-center mt-4"></div>
+  </section>
+
+  <!-- Navegação Principal (Escondido até login) -->
+  <section id="main-section" class="hidden w-full p-6">
+    <nav class="flex justify-center gap-4 mb-8">
+      <button class="nav-button" data-target="edit">Editar</button>
+      <button class="nav-button" data-target="report">Relatórios</button>
+      <button class="nav-button" data-target="config">Configurações</button>
+    </nav>
+
+    <div id="content-area">
+      <!-- Conteúdo dos módulos será carregado dinamicamente aqui -->
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Gráficos -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script> <!-- QR Code -->
+  
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
+
