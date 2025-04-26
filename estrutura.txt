@@ -1,0 +1,22 @@
+/aqui-lidero-eu/
+├── index.html
+├── css/
+│   └── styles.css
+│
+├── js/
+│   ├── data/
+│   │   ├── data.js
+│   │   └── storage.js
+│   │
+│   ├── modules/
+│   │   ├── nav.js
+│   │   ├── auth.js
+│   │   ├── config.js
+│   │   ├── edit.js
+│   │   └── report.js
+│   │
+│   ├── utils/
+│   │   └── ui-utils.js
+│   │
+│   ├── tailwind-config.js
+│   └── app.js
